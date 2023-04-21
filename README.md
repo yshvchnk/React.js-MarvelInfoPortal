@@ -56,7 +56,9 @@ To get started with this project, follow the steps below:
 3. Install dependencies:\
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `npm install`
 
-4. Start the development server:\
+4. Get your Marvel API key on [Marvel API](https://developer.marvel.com/) and insert it in **MarvelService.js**
+
+5. Start the development server:\
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `npm start`
 
 ## Usage
