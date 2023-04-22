@@ -42,6 +42,7 @@ The app contains four pages:
 -   React Transition Group
 -   Formik
 -   Yup
+-   React Helmet
 
 ## Prerequisites
 
