@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
 import CharInfo from "../charInfo/CharInfo";
+import CharSearchForm from "../charSearchForm/CharSearchForm";
 import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 
 import decoration from "../../resources/img/vision.png";
@@ -24,11 +25,16 @@ const MainPage = () => {
                 <ErrorBoundary>
                     <CharList onCharSelected={onCharSelected} selectedChar />
                 </ErrorBoundary>
-                <ErrorBoundary>
-                    <CharInfo charId={selectedChar} />
-                </ErrorBoundary>
-                <img className="bg-decoration" src={decoration} alt="vision" />
+                <div>
+                    <ErrorBoundary>
+                        <CharInfo charId={selectedChar} />
+                    </ErrorBoundary>
+                    <ErrorBoundary>
+                        <CharSearchForm />
+                    </ErrorBoundary>
+                </div>
             </div>
+            <img className="bg-decoration" src={decoration} alt="vision" />
         </>
     );
 };

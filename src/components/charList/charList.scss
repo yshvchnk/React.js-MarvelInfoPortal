@@ -1,4 +1,4 @@
-@import '../../style/variables.scss';
+@import "../../style/variables.scss";
 
 .char {
     &__content {
@@ -18,7 +18,7 @@
         width: 200px;
         height: 318px;
         background-color: $dark;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
         padding: 15px;
         cursor: pointer;
         transition: 0.3s transform;
@@ -31,6 +31,20 @@
         &_selected {
             box-shadow: 0 5px 20px $main-color;
             transform: translateY(-8px);
+        }
+        &-enter {
+            opacity: 0;
+        }
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        &-exit {
+            opacity: 1;
+        }
+        &-exit-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
         }
     }
     &__name {

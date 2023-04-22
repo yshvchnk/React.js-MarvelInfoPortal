@@ -13,11 +13,12 @@
 ## About Project
 
 This is a React-based web application that displays Marvel characters and Marvel Comics dynamically created from [Marvel API](https://developer.marvel.com/)
-The app contains three pages:
+The app contains four pages:
 
 -   page with characters
 -   page with all comics
 -   page with a single comic
+-   page with a single character
 
 ## Screenshots:
 
@@ -38,6 +39,9 @@ The app contains three pages:
 -   React.js
 -   SCSS
 -   React-Router
+-   React Transition Group
+-   Formik
+-   Yup
 
 ## Prerequisites
 
